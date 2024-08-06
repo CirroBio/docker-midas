@@ -22,4 +22,4 @@ RUN conda update -n base -c defaults conda && \
 RUN cd /usr/local/ && \
     tar xzvf v3.tar.gz && \
     cd MIDAS-3 && \
-    bash tests/test_analysis.sh 1
+    conda run -n midasv3 /bin/bash tests/test_analysis.sh 1
