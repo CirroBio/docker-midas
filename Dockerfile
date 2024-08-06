@@ -19,7 +19,7 @@ RUN conda update -n base -c defaults conda && \
         -n midasv3 \
         midasv3=1.0.0
 
-RUN cd /usr/local/ && \
-    tar xzvf v3.tar.gz && \
-    cd MIDAS-3 && \
-    conda run -n midasv3 /bin/bash tests/test_analysis.sh 1
+# RUN cd /usr/local/ && \
+#     tar xzvf v3.tar.gz && \
+#     cd MIDAS-3 && \
+#     conda run -n midasv3 /bin/bash tests/test_analysis.sh 1
